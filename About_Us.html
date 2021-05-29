@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<!-- Jayson Smith 5/21/2021 index.html This page introduces the Travelers company -->
+<!-- Jayson Smith 5/21/2021 template.html This page introduces the Travelers company -->
     <!-- the title users see in the browsers tab-->
 <head>
     <title>Travelers</title>
@@ -8,17 +8,23 @@
     <meta charset="utf-8" />
     
     <link href="styles.css" rel="stylesheet">
+    <style>
+        p{
+            display: inline;
+            padding: 0px 50px;
+        }
+    </style>
     
 </head>
     <!-- create body tag to hold the main content of the page -->
     <body>
         <!-- Create header to hold logo and company title -->
     <header>
-    <a href="index.html"><img src="Logo.png" alt="Traveler Logo"
+        <a href="index.html"><img class="logo" src="Logo.png" alt="Traveler Logo"
          height="100" width="400"></a>
         
         
-                    <!-- create the navigation bar -->
+            <!-- create the navigation bar -->
     <nav> 
         <ul class="nav_links">
            <li><a href="About_Us.html">About Us</a></li> 
@@ -29,31 +35,25 @@
         <a href="Contact_Us.html"><button>Contact Us</button></a>
         
     </header>
-   
-        <!-- Create a section place holder for images -->
-    <section id="picture">
-       
-        <img src="pic1.jpg" alt="Venice Canal, Italy"
-         height="300" width="400">  
+
+        <!-- Create a section place holder -->
+    <section>
+       <h1>Who We Are</h1>
     </section>
-    
-    <section> 
-        <h1>Welcome to Travelers!</h1> 
-    </section>
-        <!-- Create a article sharing the introduction of the company -->
+        <!-- Create a article sharing information -->
     <article>
-        <p>Your one stop website for all your future travel plans and packages. Browse through all the sections and links at your leisure, if you dont see what you are looking for contact us for your custom package.</p>
+        <img class="about_us_pic" src="about_us_pic.jpg" alt="about us pic" height="400" width="350">
+        
+        <p>Travelers is a company that was created by a group a backpackers who met on their travels. Our group started with two people who just wanted to tavel and explore what the world has to offer. Over the years of traveling we met like minded backpackers who also wanted to share these experiances with others. From this Travelers was born, with a goal to help those who would like to veiw the wonders of the world. At Travelers we don't care if you want to travel in style with planes, trains, and hotels or if your are the type that wants to seek the beauty of discomfort through backpacking across countries. Travelers goal is to help find the perfect trip for you no matter the price or location! </p>
     </article>
         <!-- create footer to hold secondary navigation and company address -->
     <footer>
-        
         <ul class="nav_linksb">
         <a href="About_Us.html">About Us</a> 
         <a href="Gallery.html">Gallery</a> 
         <a href="Adventures.html">Adventures</a> 
         <a href="Contact_Us.html">Contact Us</a>
         </ul>
-        
         
         <p>Travelers &#8226; 555 Adventur Road, Las Angeles, CA &#8226; Copyright &#8226; This is a fake website</p>
         

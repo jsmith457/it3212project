@@ -9,6 +9,32 @@
     
     <link href="styles.css" rel="stylesheet">
     
+<style>
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: center;
+  width: 400px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+</style>
+    
+    
+    
+    
 </head>
     <!-- create body tag to hold the main content of the page -->
     <body>
@@ -32,11 +58,34 @@
 
         <!-- Create a section place holder -->
     <section>
-       Lorem ipsum
+       <h1>Come view and share your Traverlers pictures!</h1>
     </section>
         <!-- Create a article sharing information -->
     <article>
-        Lorem ipsum
+        
+        
+    <div class="gallery">
+        <a target="_blank" href="gallery1.jpg">
+            <img src="gallery1.jpg" alt="Girl with Ice Chuncks" width="600" height="400">
+        </a>
+        <div class="desc">Girl with Ice Chuncks</div>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank" href="gallery2.jpg">
+            <img src="gallery2.jpg" alt="Duino, Italy" width="600" height="400">
+        </a>
+        <div class="desc">Duino, Italy</div>
+    </div>
+        
+    <div class="gallery">
+        <a target="_blank" href="gallery3.jpg">
+            <img src="gallery3.jpg" alt="Sand Dunes" width="600" height="400">
+        </a>
+        <div class="desc">Sand Dunes</div>
+    </div>
+        
+        
     </article>
         <!-- create footer to hold secondary navigation and company address -->
     <footer>
