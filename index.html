@@ -5,9 +5,39 @@
 <head>
     <title>Travelers</title>
     
-    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta charset="utf-8"/>
     
     <link href="styles.css" rel="stylesheet">
+    
+    <!-- create a embedded style sheet to disign the table and have it adjust to screen size-->
+    <style>
+        
+        table.center {
+            padding: 40px;
+            margin-top: 20px;
+            margin-left: auto; 
+            margin-right: auto;
+            font-family: 'Inter', sans-serif;
+            font-weight: 500;
+            font-size: 20px;
+            width: 50%;
+            border-collapse: collapse;
+        }
+        
+        td{
+            padding: 10px;
+            background-color: lightblue
+        }
+        
+     @media (max-width: 1000px) {
+    table.center{
+        width: 100%;
+    }
+}
+        
+    </style>
+    
     
 </head>
     <!-- create body tag to hold the main content of the page -->
@@ -42,20 +72,33 @@
     </section>
         <!-- Create a article sharing the introduction of the company -->
     <article>
-        <p>Your one stop website for all your future travel plans and packages. Browse through all the sections and links at your leisure, if you dont see what you are looking for contact us for your custom package.</p>
+        <p>Your one stop website for all your future travel plans and packages. Browse through all the sections and links at your leisure, if you dont see what you are looking for contact us for your custom package.</p><br>
+        
     </article>
+        <!-- Create a tabel with 2 columns and rows for customer quotes-->
+        <table class="center">
+        <tr>
+            <td>"Best travel service around!"<br> -Mike</td>
+            <td>"Easy to use, great information!"<br> -Tim</td>
+        </tr>
+        <tr>
+            <td>"I would recoment Travelers to anyone!"<br> -Sue</td>
+            <td>"I give this site 5 Stars!"<br> -Liz</td>
+        </tr>
+        
+        </table>
         <!-- create footer to hold secondary navigation and company address -->
     <footer>
-        
-        <ul class="nav_linksb">
+        <nav class="footer_nav">
+        <ul class="nav_links">
             <li><a href="About_Us.html">About Us</a></li> 
             <li><a href="Gallery.html">Gallery</a></li> 
             <li><a href="Adventures.html">Adventures</a></li>
             <li><a href="Contact_Us.html">Contact Us</a></li>
         </ul>
+        </nav>
         
-        
-        <p>Travelers &#8226; 555 Adventur Road, Las Angeles, CA &#8226; Copyright &#8226; This is a fake website</p>
+        <p class="copyright">Travelers &#8226; 555 Adventur Road, Las Angeles, CA &#8226; Copyright &#8226; This is a fake website</p>
         
         
     </footer>

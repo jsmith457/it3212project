@@ -5,9 +5,28 @@
 <head>
     <title>Travelers</title>
     
-    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta charset="utf-8"/>
     
     <link href="styles.css" rel="stylesheet">
+    <!-- Embedded style sheet that will arange that content to look more like a form-->
+    <style>
+        table.form {
+            padding: 40px;
+            margin: 0 0 0 120px;
+            font-family: 'Inter', sans-serif;
+            font-weight: 500;
+            font-size: 20px;
+            width: 30%;
+            
+        }
+        
+        td{
+            padding: 10px;
+        }
+        
+    </style>
+    
     
 </head>
     <!-- create body tag to hold the main content of the page -->
@@ -16,8 +35,6 @@
     <header>
         <a href="index.html"><img class="logo" src="Logo.png" alt="Traveler Logo"
          height="100" width="400"></a>
-        
-        
         
             <!-- create the navigation bar -->
     <nav> 
@@ -40,16 +57,36 @@
         <p>Contact us with any inquires and a representative will reach out within 3-4 business days!</p>
         
     </article>
+        <!-- Create a table that only uses rows, this will be used for the forms-->
+    <table class="form">
+        <tr>
+            <td>Name:</td>
+        </tr>
+        <tr>
+            <td>E-Mail:</td>
+        </tr>
+        <tr>
+            <td>Phone Number:</td>
+        </tr> 
+        <tr>
+            <td>How would you like us to contact you?</td>
+        </tr> 
+        <tr>
+            <td>How may we help you?</td>
+        </tr> 
+    </table>
         <!-- create footer to hold secondary navigation and company address -->
     <footer>
-        <ul class="nav_linksb">
+        <nav class="footer_nav">
+        <ul class="nav_links">
             <li><a href="About_Us.html">About Us</a></li> 
             <li><a href="Gallery.html">Gallery</a></li> 
             <li><a href="Adventures.html">Adventures</a></li>
             <li><a href="Contact_Us.html">Contact Us</a></li>
         </ul>
+        </nav>
         
-        <p>Travelers &#8226; 555 Adventur Road, Las Angeles, CA &#8226; Copyright &#8226; This is a fake website</p>
+        <p class="copyright">Travelers &#8226; 555 Adventur Road, Las Angeles, CA &#8226; Copyright &#8226; This is a fake website</p>
         
         
     </footer>

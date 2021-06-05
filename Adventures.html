@@ -5,9 +5,27 @@
 <head>
     <title>Travelers</title>
     
-    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta charset="utf-8"/>
     
     <link href="styles.css" rel="stylesheet">
+    
+    <style>
+        
+        .row {
+            display: flex;
+            padding: 0px;
+        }
+
+        /* Create two equal columns that sits next to each other */
+        .column {
+            width: 50%;
+            padding: 50px;
+            font-family: 'Inter', sans-serif;
+            font-weight: 500;
+            font-size: 18px;
+            }
+    </style>
     
 </head>
     <!-- create body tag to hold the main content of the page -->
@@ -38,16 +56,34 @@
     <article>
         <p>Search though our most popular Adventures or build your own Adventure!</p>
     </article>
+        <!-- created 2 columns and filled with information-->
+    <div class="row">
+        <div class="column">
+            <a target="_blank" href="colosseum.jpg">
+            <img style="float: right;" src="colosseum.jpg" alt="Rome, Italy" width="450" height="250">
+            </a>
+            
+        </div>
+        <div class="column">
+            <h2>Rome, Italy</h2>
+            <p>Come take a 7 day trip to Rome,Italy where you will get to visit famous locations such as the Pantheon, Colosseum, Roman Forum, Palatime Hill, and much more!</p>
+            
+        </div>
+    </div>    
+        
+        
         <!-- create footer to hold secondary navigation and company address -->
     <footer>
-        <ul class="nav_linksb">
+        <nav class="footer_nav">
+        <ul class="nav_links">
             <li><a href="About_Us.html">About Us</a></li> 
             <li><a href="Gallery.html">Gallery</a></li> 
             <li><a href="Adventures.html">Adventures</a></li>
             <li><a href="Contact_Us.html">Contact Us</a></li>
         </ul>
+        </nav>
         
-        <p>Travelers &#8226; 555 Adventur Road, Las Angeles, CA &#8226; Copyright &#8226; This is a fake website</p>
+        <p class="copyright">Travelers &#8226; 555 Adventur Road, Las Angeles, CA &#8226; Copyright &#8226; This is a fake website</p>
         
         
     </footer>

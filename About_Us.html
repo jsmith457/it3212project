@@ -5,13 +5,32 @@
 <head>
     <title>Travelers</title>
     
-    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta charset="utf-8"/>
     
     <link href="styles.css" rel="stylesheet">
+    <!-- create a embedded style sheet for the created table that will center and create borders-->
     <style>
-        p{
+        #inline{
             display: inline;
             padding: 0px 50px;
+        }
+        
+        table, th, td{
+            border: 1px solid black;
+            padding: 5px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        table{
+            border-collapse: collapse;
+        }
+        th{
+            height: 30px;
+            width: 150px;
+        }
+        td{
+            text-align: center;
         }
     </style>
     
@@ -44,18 +63,51 @@
     <article>
         <img class="about_us_pic" src="about_us_pic.jpg" alt="about us pic" height="400" width="350">
         
-        <p>Travelers is a company that was created by a group a backpackers who met on their travels. Our group started with two people who just wanted to tavel and explore what the world has to offer. Over the years of traveling we met like minded backpackers who also wanted to share these experiances with others. From this Travelers was born, with a goal to help those who would like to veiw the wonders of the world. At Travelers we don't care if you want to travel in style with planes, trains, and hotels or if your are the type that wants to seek the beauty of discomfort through backpacking across countries. Travelers goal is to help find the perfect trip for you no matter the price or location! </p>
+        <p id="inline">Travelers is a company that was created by a group a backpackers who met on their travels. Our group started with two people who just wanted to tavel and explore what the world has to offer. Over the years of traveling we met like minded backpackers who also wanted to share these experiances with others. From this Travelers was born, with a goal to help those who would like to veiw the wonders of the world. At Travelers we don't care if you want to travel in style with planes, trains, and hotels or if your are the type that wants to seek the beauty of discomfort through backpacking across countries. Travelers goal is to help find the perfect trip for you no matter the price or location! </p>
     </article>
+
+    <table>
+        <!-- Create a 3x3 table with a header and that will share info about the company owners-->
+        <tr>
+        <th COLSPAN="3">
+        The People behind Travelers
+        </th>
+        </tr>
+        <tr>
+            <th>Founder</th>
+            <th>Name</th>
+            <th>Specialization</th>
+        </tr>
+        <tr>
+            <td><img src="Tim.jpg" alt="Tim" height="100" width="100"></td>
+            <td>Tim Smith</td>
+            <td>North America Travels</td>
+        </tr>
+        <tr>
+            <td><img src="Emma.jpg" alt="Emma" height="100" width="100"></td>
+            <td>Emma Davis</td>
+            <td>South European Travels</td>
+        </tr>
+        <tr>
+            <td><img src="Oliver.jpg" alt="Oliver" height="100" width="100"> </td>
+            <td>Oliver Jones</td>
+            <td>West European Travels</td>
+        </tr>
+    </table>
+        
+        
         <!-- create footer to hold secondary navigation and company address -->
     <footer>
-        <ul class="nav_linksb">
+        <nav class="footer_nav">
+        <ul class="nav_links">
             <li><a href="About_Us.html">About Us</a></li> 
             <li><a href="Gallery.html">Gallery</a></li> 
             <li><a href="Adventures.html">Adventures</a></li>
             <li><a href="Contact_Us.html">Contact Us</a></li>
         </ul>
+        </nav>
         
-        <p>Travelers &#8226; 555 Adventur Road, Las Angeles, CA &#8226; Copyright &#8226; This is a fake website</p>
+        <p class="copyright">Travelers &#8226; 555 Adventur Road, Las Angeles, CA &#8226; Copyright &#8226; This is a fake website</p>
         
         
     </footer>
