@@ -75,9 +75,21 @@ article {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0;
+    margin: 20px;
     width: 90%;
     padding: 0px 100px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+#pictures {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 100vh;
     font-family: 'Inter', sans-serif;
     font-weight: 500;
     font-size: 16px;

@@ -16,20 +16,47 @@ div.gallery {
   border: 1px solid #ccc;
   float: none;
   width: 400px;
+  
 }
 
 div.gallery:hover {
   border: 1px solid #777;
 }
 
-div.gallery img {
+div.gallery img { 
+  top: 0;
+  left: 0;  
   width: 100%;
-  height: auto;
+  height: 500px;
 }
 
 div.desc {
   padding: 15px;
   text-align: center;
+}
+    
+div.gallery.active{
+    position: fixed;
+    bottom: 10%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+    z-index: 1000;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+    
+div.gallery.active img{
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    top: 50px;
+    left: 50px;
+    right: 50px;
+    bottom: 50px;
+    max-width: 40%;
+    height: calc(100% - 100px);
+    width: calc(100% - 100px);
 }
 </style>
     
@@ -62,30 +89,35 @@ div.desc {
        <h1>Come view and share your Traverlers pictures!</h1>
     </section>
         <!-- Create a article sharing information -->
-    <article>
-        
-        
+        <!-- create an image gallery with pop-up window -->
+    <article id="pictures">
+           
     <div class="gallery">
-        <a target="_blank" href="gallery1.jpg">
-            <img src="gallery1.jpg" alt="Girl with Ice Chuncks" width="600" height="400">
-        </a>
+        
+            <img src="gallery1.jpg" alt="Girl with Ice Chuncks">
+        
         <div class="desc">Girl with Ice Chuncks</div>
     </div>
 
     <div class="gallery">
-        <a target="_blank" href="gallery2.jpg">
-            <img src="gallery2.jpg" alt="Duino, Italy" width="600" height="400">
-        </a>
+        
+            <img src="gallery2.jpg" alt="Duino, Italy">
+        
         <div class="desc">Duino, Italy</div>
     </div>
         
     <div class="gallery">
-        <a target="_blank" href="gallery3.jpg">
-            <img src="gallery3.jpg" alt="Sand Dunes" width="600" height="400">
-        </a>
+        
+            <img src="gallery3.jpg" alt="Sand Dunes">
+        
         <div class="desc">Sand Dunes</div>
     </div>
-        
+    
+    <script>
+        let gallery = document.querySelectorAll('.gallery');
+        gallery.forEach(popup => popup.addEventListener('click', () => {popup.classList.toggle('active')
+        }))
+    </script>
         
     </article>
         <!-- create footer to hold secondary navigation and company address -->
