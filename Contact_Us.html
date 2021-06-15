@@ -10,22 +10,98 @@
     
     <link href="styles.css" rel="stylesheet">
     <!-- Embedded style sheet that will arange that content to look more like a form-->
+    
     <style>
-        table.form {
-            padding: 40px;
-            margin: 0 0 0 120px;
-            font-family: 'Inter', sans-serif;
-            font-weight: 500;
-            font-size: 20px;
-            width: 30%;
-            
-        }
+    fieldset {
+        background-color: #eeeeee;
+        width: 1000px;
+    }
+
+    legend {
+        background-color: rgba(0,136,169,1);
+        color: white;
+        padding: 5px 10px;
+    }
         
-        td{
-            padding: 10px;
-        }
+    form {
+	   width: 1000px;
+	   margin: 0 auto;
+       font-family: 'Inter', sans-serif;
+    }
+    
+    input[type=text], select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    input[type=submit] {
+        width: 100%;
+        background-color: rgba(0,136,169,1);
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    
+    #inquires{
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    
+    input[type=submit]:hover {
+        background-color: rgba(0,136,169,0.8);
+    }
+    
+    input{
+        margin: 8px;
         
-    </style>
+    }
+    
+    div {
+        border-radius: 5px;
+        padding: 20px;
+        
+    }
+    
+    label {
+        background-color: #eeeeee;
+        margin: 10px;
+        
+    }
+     
+    #name{
+        background-color:white;
+    }
+    
+    #e-mail{
+        background-color:white;
+    }
+    
+    #phone-number{
+        background-color:white;
+    }
+    
+    #location{
+        background-color: white;
+    }
+    
+    #inquires{
+        background-color:white;
+    }
+    
+</style>  
     
     
 </head>
@@ -58,23 +134,44 @@
         
     </article>
         <!-- Create a table that only uses rows, this will be used for the forms-->
-    <table class="form">
-        <tr>
-            <td>Name:</td>
-        </tr>
-        <tr>
-            <td>E-Mail:</td>
-        </tr>
-        <tr>
-            <td>Phone Number:</td>
-        </tr> 
-        <tr>
-            <td>How would you like us to contact you?</td>
-        </tr> 
-        <tr>
-            <td>How may we help you?</td>
-        </tr> 
-    </table>
+    <div>
+        <form action="response_page.php" method="post">
+        <fieldset>
+        <legend>Contact Info:</legend>    
+        <label for="name">Name:</label><br />
+            <input type="text" name="name" id="name"><br />
+            
+        <label for="e-mail">E-mail:</label><br />
+            <input type="text" name="user-email" id="e-mail"><br />
+        
+        <label for="phone-number">Phone Number:</label><br />
+            <input type="text" name="user-pn" id="phone-number"><br />  
+            
+        How would you like us to contact you? <br />
+            <label for="phone">Phone:</label>
+            <input type="radio" name="contact" id="phone"><br />
+            <label for="mail">E-mail:</label>
+            <input type="radio" name="contact" id="mail"><br />
+            
+        <label for="location">Location of Travel:</label> <br />
+            <select name="location" id="location">
+            <option value="North America">North America</option>
+            <option value="South America">South America</option>
+            <option value="Asia">Asia</option>
+            <option value="Africa">Africa</option>
+            <option value="Europe">Europe</option>
+            </select><br />
+        
+        <label for="inquires">How may we help you?:</label> <br />
+            <textarea rows="5" cols="50" name="inquires" id="inquires"></textarea>
+        
+        <br />
+            <input type="submit" value="Submit" id="submit">
+        </fieldset>    
+        </form>
+        
+    </div>
+        
         <!-- create footer to hold secondary navigation and company address -->
     <footer>
         <nav class="footer_nav">
